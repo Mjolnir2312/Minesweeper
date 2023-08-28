@@ -1,0 +1,16 @@
+GamePlay : done
+ModeGame : done
+Coins : done
+GameplaySetting : done
+Settings : done
+Custom : done
+Continue: not yet
+Daily reward:....
+How to Play: not yet
+Languages : done
+Lose game: not yet
+Rate: not yet
+Rate tks: not yet
+Shop: not yet
+Stats: not yet
+Win game: not yet

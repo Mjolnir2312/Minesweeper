@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07863b1f4781e5e4d9e45dcbc4565d12, type: 3}
+  m_Name: DataSettingGame
+  m_EditorClassIdentifier: 
+  dataMode:
+  - mode: 0
+    Height: 9
+    Width: 9
+    Mine: 10
+    coinReward: 2
+    UpGrid: 3.5
+    fieldOfViewCam: 90
+  - mode: 1
+    Height: 16
+    Width: 16
+    Mine: 40
+    coinReward: 10
+    UpGrid: 3.8
+    fieldOfViewCam: 90
+  - mode: 2
+    Height: 30
+    Width: 16
+    Mine: 99
+    coinReward: 16
+    UpGrid: 7.7
+    fieldOfViewCam: 100
+  - mode: 3
+    Height: 30
+    Width: 24
+    Mine: 140
+    coinReward: 32
+    UpGrid: 5.3
+    fieldOfViewCam: 90
+  - mode: 4
+    Height: 14
+    Width: 12
+    Mine: 28
+    coinReward: 10
+    UpGrid: 3
+    fieldOfViewCam: 90
