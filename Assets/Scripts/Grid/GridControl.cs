@@ -42,7 +42,7 @@ public class GridControl : MonoBehaviour
 
     //private GameSettings settings;
     private EGameState _gameState = EGameState.Uninitialized;
-    private GameManager GM;
+    [SerializeField] private GameManager GM;
 
     [SerializeField] private float upGrid;
     [SerializeField] private Text mineCount;
@@ -90,7 +90,7 @@ public class GridControl : MonoBehaviour
     }
     private void Awake()
     {
-        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //GM = GameObject.Find("GameManager").GetComponent<GameManager>();
         //_settings = GameSettings.Easy;
     }
     // Start is called before the first frame update

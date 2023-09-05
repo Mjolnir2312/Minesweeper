@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     }
     private void Awake()
     {
-        _grid = GameObject.Find("GridManager").GetComponent<GridControl>();
+        //_grid = GameObject.Find("GridManager").GetComponent<GridControl>();
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         if (Instance == null)
         {

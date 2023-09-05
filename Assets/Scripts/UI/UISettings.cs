@@ -36,7 +36,7 @@ public class UISettings : MonoBehaviour
 
     void Init()
     {
-        Player.SetSound(isSoundOn);
+        //Player.SetSound(isSoundOn);
         imgBtnSound.sprite = arraySoundSpr[isSoundOn ? 0 : 1];
 
 
@@ -51,7 +51,7 @@ public class UISettings : MonoBehaviour
     public void ToggleSound()
     {
         isSoundOn = !isSoundOn;
-        Player.SetSound(isSoundOn);
+        //Player.SetSound(isSoundOn);
         SoundManager.Instance.ToggleSound();
         imgBtnSound.sprite = arraySoundSpr[isSoundOn ? 0 : 1];
     }

@@ -22493,6 +22493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb9aec12e1fdbc4795497eea354b2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  record: {fileID: 1415958844}
+  bombFound: {fileID: 81729867}
+  winReward: {fileID: 1212039221}
+  coinReward: {fileID: 304772146}
 --- !u!1 &859141143
 GameObject:
   m_ObjectHideFlags: 0
@@ -22802,7 +22806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7f2db492cac47f04fb21372361428041, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14cf150f59a32364ab1f043a9a798215, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23644,7 +23648,7 @@ Transform:
   - {fileID: 128949569}
   - {fileID: 996153984}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890677252
 GameObject:
@@ -28246,7 +28250,7 @@ RectTransform:
   m_Children:
   - {fileID: 1251682718}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -32650,68 +32654,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158870889}
   m_CullTransparentMesh: 1
---- !u!1 &1163507596
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1163507598}
-  - component: {fileID: 1163507597}
-  m_Layer: 0
-  m_Name: GridManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1163507597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163507596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5328d15532cb37447a263d8a00fddcd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinScale: 0.5
-  MaxScale: 4
-  TilePrefab: {fileID: -4319665236634681907, guid: 6f081de87deba344bb86c6c641d941c6, type: 3}
-  CameraGrid: {fileID: 298800181}
-  GameDataSettingsMode:
-    mode: 0
-    Height: 0
-    Width: 0
-    Mine: 0
-    coinReward: 0
-    UpGrid: 0
-    fieldOfViewCam: 0
-  _numBombLeft: 0
-  ShowTime: 0
-  TimeCount: 0
-  upGrid: 2.5
-  mineCount: {fileID: 1848568534}
-  timeCount: {fileID: 1068419888}
---- !u!4 &1163507598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163507596}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164553939
 GameObject:
   m_ObjectHideFlags: 0
@@ -38486,7 +38428,7 @@ RectTransform:
   - {fileID: 272669900}
   - {fileID: 928465631}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -43404,7 +43346,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1163507597}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GridControl, Assembly-CSharp
         m_MethodName: OnFlagMode
         m_Mode: 1
@@ -43915,7 +43857,7 @@ RectTransform:
   m_Children:
   - {fileID: 304618482}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -44685,7 +44627,7 @@ RectTransform:
   m_Children:
   - {fileID: 809551656}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -46696,7 +46638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -56373,6 +56315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a63c6b9dca21d4786d94d3092f68aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombFounds: {fileID: 0}
+  coinRewards: {fileID: 0}
 --- !u!1 &1993321914
 GameObject:
   m_ObjectHideFlags: 0
@@ -57232,6 +57176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022697729}
   - component: {fileID: 2022697731}
+  - component: {fileID: 2022697732}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -57275,7 +57220,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ea4282850e8bffc4699a1ad3dea3f32d, type: 3}
   - {fileID: 21300000, guid: dfb554b678d3ff14ea256476f7633bf5, type: 3}
   gameStateImg: {fileID: 950784391}
-  _grid: {fileID: 1163507597}
+  _grid: {fileID: 2022697732}
   mainCamera: {fileID: 9180281855998522552}
   selectedMode: 0
   record: {fileID: 1415958844}
@@ -57284,6 +57229,37 @@ MonoBehaviour:
   coinReward: {fileID: 304772146}
   loseBombFound: {fileID: 810150354}
   lostCoinReward: {fileID: 595992404}
+--- !u!114 &2022697732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022697727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5328d15532cb37447a263d8a00fddcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinScale: 0.5
+  MaxScale: 4
+  TilePrefab: {fileID: -4319665236634681907, guid: 6f081de87deba344bb86c6c641d941c6, type: 3}
+  CameraGrid: {fileID: 298800181}
+  GameDataSettingsMode:
+    mode: 0
+    Height: 0
+    Width: 0
+    Mine: 0
+    coinReward: 0
+    UpGrid: 0
+    fieldOfViewCam: 0
+  _numBombLeft: 0
+  ShowTime: 0
+  TimeCount: 0
+  GM: {fileID: 2022697731}
+  upGrid: 2.5
+  mineCount: {fileID: 1848568534}
+  timeCount: {fileID: 1068419888}
 --- !u!1 &2024827915
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,17 +9,17 @@ public class ShopUI : MonoBehaviour
     [SerializeField] private Text _coinAds;
 
     public CoinsData coinsData;
-    private GridControl _grid;
+    //private GridControl _grid;
     private void OnEnable()
     {
         //GameManager.IsGamePaused = true;
         _coin.text = Player.ShowCoin().ToString();
-        _grid.DisablePlayField();
+        GameManager.Instance.DisableGrid();
     }
 
     private void Awake()
     {
-        _grid = GameObject.Find("GridManager").GetComponent<GridControl>();
+        //_grid = GameObject.Find("GridManager").GetComponent<GridControl>();
     }
 
     private void Start()
@@ -41,7 +41,7 @@ public class ShopUI : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         SoundManager.Instance.ToggleSound();
-        _grid.EnablePlayField();
+        GameManager.Instance.EnableGrid();
     }
 
     public void AddCoinVideoAds()

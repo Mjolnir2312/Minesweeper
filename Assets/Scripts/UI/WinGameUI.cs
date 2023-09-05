@@ -22,7 +22,13 @@ public class WinGameUI : MonoBehaviour
 
         int sum = gameDataMode.Mine + gameDataMode.coinReward;
 
-        record.text = Math.Round(GameManager.Instance.TimeRecord(), 3).ToString("0.000");
+        float timeRecord = GameManager.Instance.TimeRecord();
+        Debug.Log(SelectedMode);
+        //Player.BestTime(timeRecord, SelectedMode);
+        //Player.ShowTime(timeRecord, SelectedMode);
+        Debug.Log(Player.ShowTime(timeRecord, SelectedMode));
+        record.text = Math.Round(Player.ShowTime(timeRecord, SelectedMode), 3).ToString("0.000");
+
         bombFound.text = gameDataMode.Mine.ToString();
         winReward.text = gameDataMode.coinReward.ToString();
         coinReward.text = sum.ToString();
